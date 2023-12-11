@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCrown } from '@fortawesome/free-solid-svg-icons';
+
 
 const navLinks = [
   {
@@ -30,7 +33,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          Praise
+          <FontAwesomeIcon icon={faCrown} /> Praise 
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
